@@ -1,0 +1,34 @@
+﻿@model Usuario?
+
+@{
+    ViewData["Title"] = "Novo Usuário";
+}
+   <h1>@ViewData["Title"]</h1>
+
+
+@using(Html.BeginForm("PersistirUsuario","Home", FormMethod.Post))
+{
+   <div>
+        Id<input type="hidden" name="id" value="@Model?.Id" />
+   </div>
+   <div>
+       Nome<input type="text" name="nome" value="@Model?.nome"/>
+   </div>
+   <div>
+       Email<input type="text" name="email" value="@Model?.email" />
+    </div>
+    <div>
+        <button class="btn btn-success">
+            @{
+                var nomeBotao = "Adicionar";
+                if(Model != null)
+                {
+                    nomeBotao = "Editar";
+                }
+            }
+            @nomeBotao
+        </button>
+    </div>
+    
+
+}

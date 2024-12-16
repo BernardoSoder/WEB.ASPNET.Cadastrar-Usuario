@@ -1,0 +1,38 @@
+﻿@model UsuarioViewModel
+
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+<h1>Usuarios</h1>
+
+<a class="btn btn-primary" asp-controller="home" asp-action="NovoUsuario" >Novo Usuario</a>
+
+<table class="table table-striped">
+   <thead>
+    <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th colspan="2">Ações</th>
+    </tr>
+ </thead>
+ <tbody>
+@{
+    foreach (var usuario in this.Model.ListUsuario)
+    {
+        <tr>
+              <td>@usuario.Id</td>
+              <td>@usuario.nome</td>
+             <td>@usuario.email</td>
+             <td>
+                        <a class="btn btn-primary" asp-action="NovoUsuario" asp-controller="home" asp-route-id="@usuario.Id">Editar</a>
+             </td>
+             <td>
+                <a class="btn btn-danger" asp-action="Deletar" asp-controller="home" asp-route-id="@usuario.Id">Excluir</a>
+             </td>
+       </tr>
+    }
+}
+    </tbody>
+ </table >

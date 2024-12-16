@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB.ASPNET.Cadastrar-Usuario", "WEB.ASPNET.Cadastrar-Usuario.csproj", "{A20559A4-12B0-4D29-B162-0E553352178D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servico", "..\Servico\Servico.csproj", "{8258C467-5376-42AB-8283-C9345121EF44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A20559A4-12B0-4D29-B162-0E553352178D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A20559A4-12B0-4D29-B162-0E553352178D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A20559A4-12B0-4D29-B162-0E553352178D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A20559A4-12B0-4D29-B162-0E553352178D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8258C467-5376-42AB-8283-C9345121EF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8258C467-5376-42AB-8283-C9345121EF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8258C467-5376-42AB-8283-C9345121EF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8258C467-5376-42AB-8283-C9345121EF44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
